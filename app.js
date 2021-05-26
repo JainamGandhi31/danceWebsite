@@ -4,10 +4,10 @@ const bodyParser = require('body-parser');  //this is needed if you want to use 
 const app = express();
 const path = require('path');
 const port = process.env.PORT || 8000;
-
+const uri = process.env.MONGODB_URI;
 //Mongoose Connection
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 //contactDance will be the name of our database.
 
 //Defining Mongoose schema
