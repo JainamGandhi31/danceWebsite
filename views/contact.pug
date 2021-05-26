@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts  
+    script(src="/static/index.js") 
+
+block style 
+    style 
+        include ../static/styleContact.css 
+
+block content 
+    div.container
+        //- h1#msg.center #{message} commented this because we directly used alert().
+        h1#contacth1 Contact Us
+
+        form(action="/contact" method="POST" id="contactform")
+            input(type="text" class="myinput" name="name" id="name" placeholder="Enter your name") 
+            input(type="phone" class="myinput" name="phone" id="phone" placeholder="Enter your phone number") 
+            input(type="email" class="myinput" name="email" id="email" placeholder="Enter your email") 
+            input(type="text" class="myinput" name="age" id="age" placeholder="Enter your age") 
+            input(type="text" class="myinput" name="gender" id="gender" placeholder="Enter your gender") 
+            input(type="text" class="myinput" name="address" id="address" placeholder="Enter your address") 
+            input(type="text" class="myinput" name="concern" id="concern" placeholder="Enter your concern") 
+            //- textarea(name="address" id="address" cols="30" rows="10" placeholder="Enter your address")  
+            //- textarea(name="more" id="more" cols="30" rows="10" placeholder="More about yourself")  
+            button.btn(onclick="toggle()") Submit 

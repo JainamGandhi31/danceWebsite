@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+
+
+#logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* color: white; */
+    font-size: 11px;
+    margin-right: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#logo img{
+    height: 40px;
+    /* filter: invert(1); */
+}
+/* NAVIGATION BAR */
+
+#navbar{
+    top: 0px;
+    left: 0px;
+    position: sticky;
+    padding: 4px 35px;
+    background-color: blue;
+    
+}
+/* #navbar::before{
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+} */
+#navbar ul{
+    display: flex;
+    /* justify-content: center;
+     */
+     align-items: center;
+}
+#navbar li{
+    list-style: none;
+
+}
+
+#navbar li a{
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    
+    text-decoration: none;
+    padding: 7px 15px;
+    margin: 0px 20px;
+    color: white;
+    
+}
+
+#navbar li a:hover{
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* INTRODUCTION SECTION */
+
+#introSection{
+    background: url('../static/bg.jpg') no-repeat center center/cover;  
+    /* remember that it will find the image from view folder so you have to give path according to that */
+    height: 34rem;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#introSection .small{
+    font-size: 2rem;
+}
+
+
+
+/* OUR MISSION SECTION */
+
+#ourMission{
+    /* height: 20rem; */
+    background-color: white;
+}
+
+#ourMission h2{
+    padding-top: 0.8rem;
+    font-size: 34px;
+}
+
+#cardsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid black;
+    height: 15rem;
+    margin: 25px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 33%;
+    text-align: center;
+
+}
+
+.card h3{
+    font-size: 1.5rem;
+}
+
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+}
+.card-img img{
+    height:160px ;
+    padding: 10px;
+}
+
+.card-content{
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* SPONSORS SECTION  */
+
+#sponsorSection{
+    height: 20rem;
+    background-color: rgb(111, 178, 240);
+}
+
+#sponsorSection h2{
+    padding-top: 0.8rem;
+    font-size: 34px;
+    
+}
+
+.sponsors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.sponsors .Simage{
+    height: 142px;
+    margin: 0px 35px;
+}
+
+
+/* Footer Section */
+
+#footer{
+   height: 1.7rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* utility classes */
+
+.center{
+    text-align: center;
+}
